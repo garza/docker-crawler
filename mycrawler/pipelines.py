@@ -8,4 +8,6 @@
 
 class MycrawlerPipeline(object):
     def process_item(self, item, spider):
+        spider.logger.info('Pipeline opened: %s' % item)
+
         return item
